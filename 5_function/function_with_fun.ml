@@ -3,7 +3,7 @@ let sub = fun x y -> x - y
 let div = fun (x: float) (y: float) -> x /. y
 let times = fun x y -> x * y
 let rec times_rec = fun x y -> if x == 0
-  then y
+  then 0
   else (times_rec (x-1) y) + y
 let max = fun x y -> if x > y then x else y
 

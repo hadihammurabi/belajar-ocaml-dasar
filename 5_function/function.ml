@@ -8,7 +8,7 @@ let sub x y = x - y
 let div (x: float) (y: float) = x /. y
 let times x y = x * y
 let rec times_rec x y = if x == 0
-  then y
+  then 0
   else (times_rec (x-1) y) + y
 let max x y = if x > y then x else y
 
